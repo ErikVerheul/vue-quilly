@@ -33,15 +33,15 @@ No matter if you want to create full-featured editor with all Quill's modules or
 
 ```html
 <!-- Include Quill 2 -->
-<link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
 
 <!-- Import Vue and vue-quilly -->
 <script type="importmap">
   {
     "imports": {
       "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js",
-      "vue-quilly": "https://unpkg.com/vue-quilly@1.1.2/dist/vue-quilly.js"
+      "vue-quilly": "https://unpkg.com/vue-quilly@1.1.3/dist/vue-quilly.js"
     }
   }
 </script>
@@ -190,15 +190,6 @@ All events types:
 | `ready`             | quill: `Quill`                                                   |
 
 ## Nuxt
-
-You must build your editor, based on `VueQuilly` component first.
-Then put it inside `ClientOnly` component if you plan to use SSR:
-
-```html
-<ClientOnly>
-  <CompleteEditor />
-</ClientOnly>
-```
 
 See [Nuxt 3 example](https://github.com/alekswebnet/vue-quilly/blob/main/nuxt/app.vue).
 
